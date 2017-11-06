@@ -7,6 +7,8 @@ Docker image with fluentd, fluent-plugin-twitter and fluent-plugin-slack
 ## How to run on heroku
 
 ```
+git clone https://github.com/higebu/docker-fluent-twitter-slack.git
+cd docker-fluent-twitter-slack
 heroku create
 heroku config:set TWITTER_CONSUMER_KEY=xxx \
   TWITTER_CONSUMER_SECRET=xxx \
