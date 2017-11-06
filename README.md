@@ -1,6 +1,6 @@
 # docker-fluent-twitter-slack
 
-Docker image with fluentd, fluent-plugin-twitter and fluent-plugin-slack
+Docker image with [Fluentd](https://github.com/fluent/fluentd), [fluent-plugin-twitter](https://github.com/y-ken/fluent-plugin-twitter) and [fluent-plugin-slack](https://github.com/sowawa/fluent-plugin-slack)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) doesn't work for now.
 
