@@ -1,0 +1,79 @@
+{
+  "name": "fluent-twitter-slack",
+  "description": "Fluentd with fluent-plugin-twitter and fluent-plugin-slack",
+  "repository": "https://github.com/higebu/docker-fluent-twitter-slack",
+  "image": "higebu/fluent-twitter-slack",
+  "keywords": [
+    "Fluentd",
+    "Twitter",
+    "Slack"
+  ],
+  "logo": "https://raw.githubusercontent.com/fluent/fluentd-docs/master/public/logo/Fluentd_square.png",
+  "env": {
+    "FLUENTD_OPT": {
+      "description": "Fluentd option like -v",
+      "required": false
+    },
+    "TWITTER_CONSUMER_KEY": {
+      "description": "twitter consumer_key",
+      "required": true
+    },
+    "TWITTER_CONSUMER_SECRET": {
+      "description": "twitter consumer_secret",
+      "required": true
+    },
+    "TWITTER_ACCESS_TOKEN": {
+      "description": "twitter access_token",
+      "required": true
+    },
+    "TWITTER_ACCESS_TOKEN_SECRET": {
+      "description": "twitter access_token_secret",
+      "required": true
+    },
+    "TWITTER_TIMELINE": {
+      "description": "twitter timeline",
+      "value": "sampling",
+      "required": false
+    },
+    "TWITTER_KEYWORD": {
+      "description": "twitter keyword",
+      "required": false
+    },
+    "TWITTER_FOLLOW_IDS": {
+      "description": "twitter follow_ids",
+      "required": false
+    },
+    "TWITTER_LANG": {
+      "description": "twitter lang",
+      "required": false
+    },
+    "TWITTER_OUTPUT_FORMAT": {
+      "description": "twitter output_format",
+      "required": false
+    },
+    "TWITTER_FLATTEN_SEPARATOR": {
+      "description": "twitter flatten_separator",
+      "required": false
+    },
+    "SLACK_WEBHOOK_URL": {
+      "description": "slack webhook_url",
+      "required": true
+    },
+    "SLACK_CHANNEL": {
+      "description": "slack channel",
+      "required": true
+    },
+    "SLACK_USERNAME": {
+      "description": "slack username",
+      "required": false
+    },
+    "SLACK_ICON_EMOJI": {
+      "description": "slack icon_emoji",
+      "required": false
+    },
+    "SLACK_FLUSH_INTERVAL": {
+      "description": "slack flush_interval",
+      "required": false
+    }
+  }
+}
